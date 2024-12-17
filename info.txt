@@ -1,0 +1,14 @@
+
+Alumno: Catherine Hernández
+Documento: 95.658.030
+Materia: Maquetado y Desarrollo Web
+Docente: Mabel García
+Fecha de la mesa final: 19/12/2024
+
+
+
+Profesora, en el hosting no me sirve la página de gracias, es decir, cuando envias el formulario me aparece un error 405, investigando en google me 
+dice que: "es un código de estado de respuesta que indica que el servidor web no puede entregar el contenido solicitado" la verdad, no entendí mucho.
+Pero, conseguí dos opciones que están comentadas en el código de este archivo. La primera es usar "get" en vez de "post", pero sé que nos dijo que para este caso
+tiene que ser "post" y la otra opción (la encontré en internet tratando de resolver porque me preocupa) fue agregar esto en la etique de form:
+"<form action="gracias.html" method="post" enctype="multipart/form-data" onsubmit="window.location.href='gracias.html'; return false;">" para que me puede redirigir a la página de gracias. 
