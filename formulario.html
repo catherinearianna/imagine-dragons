@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Imagine Dragons | Newsletter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="recursos/jquery.min.js"></script>
+	<script src="recursos/cycle/jquery_cycle.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">     
+
+</head>
+
+<body>
+
+    <header id="header-3">
+
+        
+        <h1>Imagine Dragons</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>  
+                <li><a href="discografia.html">Discografía</a></li>
+                <li><a href="#formulario" class="navegacion">Formulario</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2 class="newsletter">Newsletter</h2>
+            <p>Conoce todo sobre la banda y <br>conviértete en el fan número #1</p>
+        </section>
+        
+
+    </header>
+
+    <main>
+
+        <section class="formulario">
+            <h2 class="ocultar">Formulario de suscripción</h2>
+            
+
+            <div id="pseudo-titulo">
+                <p>¿Quieres ser el primero en enterarte<br> de todas las novedades?</p>
+            </div>
+            
+            <div id="sub-pseudo-titulo">
+                <p>¡Queremos conocer a los fans verdaderos!</p>
+                <p>Completa este formulario y te estaremos enviando noticias de interés a tu correo.</p>
+            </div>
+            
+        
+            <!--<form action="https://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">-->
+            <!--<form action="gracias.html" method="post" enctype="multipart/form-data">-->
+
+            <form action="gracias.html" method="post" enctype="multipart/form-data">
+                
+                <div>
+                    <p class="etiquetas">Nombre: *</p>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+            
+                <div>
+                    <p class="etiquetas">Email: *</p>
+                    <input type="text" name="email" placeholder="Ingrese su correo" required>
+                </div>
+
+                <div>
+                    <p class="etiquetas">¿Qué tipo de información te gustaría recibir?</p>
+                    <div><input type="checkbox"  name="info-albumes" value="recibir">Nuevos álbumes</div>
+                    <div><input type="checkbox"  name="info-conciertos" value="recibir">Conciertos y presentaciones</div>
+                    <div><input type="checkbox"  name="info-banda" value="recibir">Información de la banda</div>
+                    <div><input type="checkbox"  name="info-novedades" value="recibir">Quiero saber cada movimiento y novedades</div>
+                </div>
+
+                <div>
+                    <p class="etiquetas">Comparte la foto que demuestre que eres un gran fan</p>
+                    <input type="file" name="foto" accept="image/jpeg, image/png">
+
+                </div>
+
+                <div>
+                    <p class="etiquetas">¿Cómo conociste Imagine Dragons? ¿Qué es lo que más te gusta?</p>
+                    <textarea name="comentario"></textarea>
+
+                </div>
+
+                <div>
+                    <p class="etiquetas">¿Te gustaría unirte a nuestro Club de Fans VIP?</p>
+                    <div><input type="radio" name="club-de-fans" value="si">¡Sí!</div>
+                    <div><input type="radio" name="club-de-fans" value="no">No, gracias.</div>
+                </div>
+
+                <div id="enviar-boton">
+                    <input type="submit" id="enviar" value="Enviar">
+                </div>
+
+            </form>
+        </section>
+
+        <script>
+            $('#fotos').cycle({ 
+            fx: 'fadeZoom',
+            speed: 1100, 
+            timeout: 1000, 
+            prev: '#ant',
+            next: '#sig',
+            pause: true
+        });
+        </script>
+
+        <section id="galeria">
+            <div id="principal">
+                <h2>Conoce nuestro club de fans VIP</h2>
+                <div class="contenedor">
+                    <div class="izquierda">
+                        <a href="#" id="ant">Prev</a>
+                    </div>
+                    <div id="fotos">
+                        <img src="image/club-fans1.jpeg" alt="Club de fans VIP en primera fila en el concierto de México">
+                        <img src="image/club-fans2.jpg" alt="Club de fans VIP en el aeropuerto de México con Dan Reynolds">
+                        <img src="image/club-fans3.jpg" alt="Sara, miembro del Club de fans VIP en Chicago con Dan Reynolds">
+                    </div>
+                    <div class="derecha">
+                        <a href="#" id="sig">Next</a>
+                    </div>
+                </div> 
+            </div> 
+        </section> 
+        
+        
+
+
+    </main>
+
+    <footer>
+
+        <p>Diseñado y Desarrollado por Catherine Hernández</p>
+        <p>Profesora Mabel Garcia. Maquetado y Desarrollo Web</p>
+        <p>Proyecto Final - TP 3. Escuela DaVinci 2024</p>
+        
+    </footer>
+    
+</body>
+</html>

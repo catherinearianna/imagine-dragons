@@ -1,0 +1,815 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}   
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(image/fondo.jpg); 
+    background-attachment: fixed;
+    margin: 0 auto;
+    width: 1280px;  
+}
+
+header {
+
+    background-image: url(image/banner-principal.jpg);
+    background-color: #1d1d1d;
+    height: 820px;
+    background-position: 0px 150px;
+    background-repeat: no-repeat;    
+}
+
+ 
+h1 {
+
+    color: #BC302F;
+    background-color: #1d1d1d;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 10px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.menu li{
+
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 20px;
+    color: #f9f6ec;
+    display: inline-block;
+    padding: 40px;
+    border-right: solid 2px #f9f6ec;
+    
+    
+}
+
+.menu li:hover {
+
+    background-color: #BC302F;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Elimina los puntos de lista */
+    background-color: #1d1d1d;
+    
+}
+
+.navegacion {
+    background-color: #BC302F;
+    padding: 20px 60px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #f9f6ec;
+}
+
+a:hover{
+    color: #f9f6ec;
+}
+
+
+
+#texto-izq {
+    display: inline-block;
+	width:880px;
+    height: 400px;
+    color: #1d1d1d;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+    border-right: #1d1d1d solid 4px;
+    background-color: #BC302F;
+
+    
+}
+
+
+#texto-izq h2 {
+
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900; 
+    color: #f9f6ec;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#inicio {
+    background-image: url(image/imagine-dragons.jpg);
+    background-repeat: no-repeat;
+    background-position: 854px 0px;
+    
+}
+
+#banner-texto {
+
+    background-image: url(image/background-texto.jpg);
+    height: 650px;
+    background-color: rgba(245, 238, 228, 0.656); /* Cambia el valor de 0.5 para ajustar la transparencia */
+    background-blend-mode: overlay; /* Mezcla el color con la imagen */
+    background-position: no-repeat; 
+    background-size: cover;
+}
+
+#banner-texto p {
+
+    display: inline-block;
+	width:700px;
+    height: 650px;
+    color: #1d1d1d;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 280px;
+    padding-left: 80px;  
+}
+
+#banner-texto {
+
+    border-bottom: #BC302F 4px solid; 
+
+}
+
+.titulos {
+
+    background-color: #1d1d1d;
+    padding: 60px;
+    padding-left: 80px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900; 
+    color: #f9f6ec;
+    font-family: "Bakbak One", sans-serif;
+    font-style: normal;
+
+}
+
+
+#imagenes-boys {
+    text-align: center;
+    color: #f9f6ec;
+    width: 1280px;
+    background-color: #1d1d1d;
+    border-bottom: #BC302F 4px solid;
+}
+
+.integrante {
+    display: inline-block;
+    width: 400px; /* Ajusta el ancho según el tamaño de tus imágenes */
+    vertical-align: top; /* Alineación vertical de cada elemento */
+    text-align: center; /* Centra el contenido de cada integrante */
+    filter: grayscale(100%);
+    transition: filter 0.5s; 
+}
+
+.integrante:hover {
+    filter: grayscale(0%);
+}
+
+
+.integrante h3, .integrante p {
+    margin-top: 5px; /* Añade un poco de espacio entre la imagen y el texto */
+    padding-bottom: 30px;
+}
+
+#historia {
+    background-image: url(image/lateral-derecho.jpg);
+    background-repeat: no-repeat;
+    background-position: 854px 150px;
+    background-color: #BC302F;
+    
+}
+
+#historia p {
+
+    display: inline-block;
+	width:800px;
+    height: auto;
+    color: #1d1d1d;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+}
+
+#genero-resaltado  {
+
+    display: inline-block;
+	width:980px;
+    height: auto;
+    color: #BC302F;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 43px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+}
+
+#genero-normal  {
+
+    display: inline-block;
+	width:980px;
+    height: auto;
+    color: #BC302F;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 43px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+}
+
+#genero-musical {
+    background-color: #1d1d1d;
+}
+
+#section-pop-rock {
+
+    background-color: #BC302F;
+    padding: 30px 0;
+    background-image: url(image/lateral-izquierdo.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -5px;
+    height: 600px;
+    
+
+}
+
+#titulo-pop-rock {
+
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900; 
+    color: #f9f6ec;
+    text-align: right;
+    margin-right: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#pop-rock {
+
+	width:630px;
+    color: #1d1d1d;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 43px;
+    text-align: left;
+    margin-left: 550px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+}
+
+#pop-rock p {
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+footer {
+    background-color: #1d1d1d;
+    padding: 30px;
+    text-align: center;
+    color: #f9f6ec;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#cta {
+    text-align: center;
+    background-color: #f9f6ec;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-bottom: 80px;
+}
+
+#cta h2 {
+
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 900; 
+    color: #BC302F;
+    font-family: "Bakbak One", sans-serif;
+    font-style: normal;
+}
+
+.boton {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #1d1d1d;
+    border: solid 4px #1d1d1d;
+    padding: 30px 50px;
+}
+
+.caja-boton {
+
+    padding-top: 80px;
+    
+    
+
+}
+
+.caja-boton a:hover {
+    color: #f9f6ec;
+    background-color: #BC302F;
+    transition: color 1s, background 1s ease-in 0s;
+}
+
+
+
+/* -----------------------------------------------PÁGINA DISCOGRAFÍA--------------------------------------------------------------------- */
+
+.menu-2 li{
+
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 20px;
+    color: #f9f6ec;
+    display: inline-block;
+    padding: 40px;
+    border-right: solid 2px #f9f6ec;
+    
+}
+
+.menu-2 li:hover {
+
+    background-color: #BC302F;
+}
+
+.menu-2 {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Elimina los puntos de lista */
+    background-color: #BC302F;
+    
+}
+
+.navegacionD {
+    background-color: #1d1d1d;
+    padding: 20px 60px;
+}
+
+.titulo-discografia {
+
+    color: #f9f6ec;
+    background-color: #BC302F;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 20px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-2 li:hover {
+
+    background-color: #1d1d1d;
+}
+
+#header-2 {
+
+    background-image: url(image/discografia-banner.jpg);
+    background-attachment: fixed;
+    height: 820px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-color: rgba(245, 238, 228, 0.656); 
+    background-blend-mode: overlay;
+
+
+}
+
+#discos-ancla {
+
+    background-color: #1d1d1de6;
+    width: 350px;
+    height: 625px;
+    margin-top: 0px;
+    padding: 80px 60px;
+}
+
+.titulosD {
+    color: #BC302F;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-discos {
+
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 27px;
+    line-height: 55px;
+    color: #f9f6ec;
+    display: inline-block;
+     
+}
+
+.nav-discos li:hover {
+
+    background-color: #BC302F;
+}
+
+#l1, #l2, #l3, #l4, #l5 {
+    padding-left: 30px;
+}
+
+#night-visions, #smoke-mirrors, #origins, #evolve, #mercury {
+    background-color: #f9f6ec;
+    height: 500px;
+    border-bottom: #1d1d1d solid 4px;  
+}
+
+.foto, figure {
+    text-align: right;
+}
+
+.texto {
+
+    width: 500px;
+    margin-top: -370px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+
+}
+
+
+.anio  {
+
+    font-size: 35px;
+    color: #1d1d1d;
+    font-weight: bolder;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+iframe {
+    border: none;
+    align-items: center;
+}
+
+.hits {
+    background-color: #BC302F;
+    color: #f9f6ec;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 80px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.modal, #e1, #e2, #e3, #e4, #e5 {
+
+    padding-left: 30px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* -----------------------------------------------PÁGINA FORMULARIO------------------------------------------------------------------- */
+
+#header-3 {
+
+    background-image: url(image/newsletter.jpg);
+    background-color: #1d1d1daf;
+    height: 820px;
+    background-position: 0px 150px;
+    background-repeat: no-repeat;      
+    background-blend-mode: overlay;
+}
+
+.newsletter {
+    color: #f9f6ec;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin: 0;
+    padding-top: 220px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header section {
+    color: #f9f6ec;
+    padding-left: 140px;
+    font-weight: 400;
+    font-size: 35px;
+    
+}
+
+.ocultar {
+    font-size: 0;
+}
+
+form {
+  max-width: 800px; 
+  padding: 20px;
+  border: 2px solid #1d1d1d;
+  border-radius: 10px; 
+  background-color: #f9f6ec;
+  font-family: Arial, sans-serif;
+}
+
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 50%; 
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #1d1d1d;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; 
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+  border-color: #BC302F;
+  outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  
+}
+
+#enviar-boton input[type="submit"] {
+    background-color: #BC302F;
+    color: white;    
+    padding: 10px 40px;
+    margin-top: 30px;
+    border: solid 2px #1d1d1d;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    transition: color 0.6s ease; 
+}
+
+#enviar-boton input[type="submit"]:hover {
+    background-color: #1d1d1d;
+    transform: scale(1.05); 
+    background-position: right; /* Mover el degradado */
+    transition: color 1s, background 1s ease-in 0s;
+}
+
+
+textarea {
+    height: 150px; 
+    width: 450px;
+    resize: none;
+}
+
+
+.formulario {
+    background-color: #BC302F;
+    padding-left: 80px;
+    padding-bottom: 80px;
+}
+
+
+#pseudo-titulo {
+    color: #f9f6ec;
+    text-align: left;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 80px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#sub-pseudo-titulo {
+    color: #1d1d1d;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.etiquetas {
+    color: #1d1d1d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #1d1d1d;
+}
+
+#galeria {
+    background-color: #f9f6ec;
+    padding-bottom: 80px;
+    
+}
+
+#principal {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#fotos {
+    margin: 0 auto;
+}
+
+#principal h2 {
+    color: #BC302F;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.contenedor{
+	position: relative;
+	
+}
+
+#sig{
+	background: url(/image/flecha-dera.png);
+	width: 42px;
+	height: 82px;
+	display: inline-block;
+	position: absolute;
+	right: 150px;
+	top: 200px;
+	font-size: 0px;
+	z-index:90;
+}
+
+#ant{
+	background: url(/image/flecha-izquier.png);
+	width: 42px;
+	height: 82px;
+	position: absolute;
+	left: 150px;
+	top: 200px;
+	font-size: 0px;
+	z-index:90;
+}
+
+/* -----------------------------------------------PÁGINA GRACIAS------------------------------------------------------------------- */
+
+#header-4{
+
+    background-color: #f9f6ec;
+    background-image: none;
+    height: 300px;
+}
+
+.thank-you {
+    color: #BC302F;
+    background-color: #f9f6ec;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 40px;
+}
+
+
+#thankyou-section {
+    background-color: #f9f6ec;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+#thank-you-text {
+    padding-bottom: 30px; 
+    font-size: 1.6rem;
+    color: #1d1d1d;
+    font-weight: bold;
+    text-align: center;
+}
+
+#redes-sociales {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#redes li {
+    display: inline-block;
+}
+
+#redes li a {
+    display: inline-block;
+    background: url(image/sprite.png);
+    width: 150px;
+    height: 150px;
+    font-size: 0;
+}
+
+#redes #fb a:hover {
+    background-position: 0 -150px;
+}
+
+#redes #inst a{
+    background-position: -150px 0px;
+}
+
+#redes #inst a:hover{
+    background-position: -150px -150px;
+}
+
+#dan {
+    background-color: #BC302F;
+    padding: 90px;
+    font-size: 25px;
+}
+
+#cite {
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+

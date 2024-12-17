@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Discografía de Imagine Dragons</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+    <script src="recursos/jquery.min.js"></script>
+    <script src="recursos/ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="recursos/ui/jquery-ui.css"> 
+
+</head>
+
+<body>
+
+    <header id="header-2">
+
+        <h1 class="titulo-discografia">Discografía</h1>
+
+        <nav>
+            <ul class="menu-2">
+                <li><a href="index.html">Inicio</a></li>  
+                <li><a href="#discografia" class="navegacionD">Discografía</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+
+        <section id="discos-ancla">
+            
+            <h2 class="titulosD">Álbumes</h2>
+
+            <nav>
+            
+                <ul class="nav-discos">
+                    <li><a href="#night-visions">Night Visions</a></li>
+                    <li><a href="#smoke-mirrors">Smoke + Mirrors</a></li>
+                    <li><a href="#evolve">Evolve</a></li>
+                    <li><a href="#origins">Origins</a></li>
+                    <li><a href="#mercury">Mercury Act 1</a></li>
+                    <li><a href="#mercury">Mercury Act 2</a></li>
+                </ul>
+                
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section id="night-visions">
+            
+            <figure>
+                <img src="image/night-visions.jpg" alt="Álbum del 2012, Night Visions">
+            </figure>
+            
+
+            <div class="texto">
+                <h3><span class="titulosD" lang="en">Night Visions</span></h3>
+                <p class="anio">2012</p>
+                <p><em>Su álbum debut, que llevó a la banda a la fama</em>, incluye éxitos como <span lang="en"> It's Time </span> y <span lang="en">Radioactive</span>, 
+                este último convirtiéndose en un fenómeno global y ganando un Grammy. El álbum establece el tono de su estilo emotivo y lleno de energía.</p>
+            </div>
+
+            <div class="modal">
+                <p id="e1">Lista de canciones</p>
+
+                <ol id="l1">
+                    <li><span lang="en">It's Time</span>
+                    <li><span lang="en">My Fault</span>
+                    <li><span lang="en">Round and Round</span>
+                    <li><span lang="en">On Top of the World</span>
+                    <li><span lang="en">Beneath the Surface</span>
+                    <li><span lang="en">Radioactive</span>
+                    <li><span lang="en">Demons</span>
+                    <li><span lang="en">Amethyst</span>    
+                </ol>
+
+                <script >
+                    $('#l1').dialog( 
+                        { 
+                            modal: true, 
+                            autoOpen: false ,
+                            title: 'Lista de canciones',
+                            width: 440,
+                            draggable:false
+                    } );
+                    
+                    $('#e1').on('click', function(){
+                        $('#l1').dialog('open');
+                    })
+                </script>
+
+            </div>
+
+        </section>
+
+        <section id="smoke-mirrors">
+
+            <figure>
+                <img src="image/smoke-mirror.jpeg" alt="Álbum del 2015, Smoke + Mirrors">
+            </figure>
+
+            <div class="texto">
+                <h3><span class="titulosD" lang="en">Smoke + Mirrors</span></h3>
+                <p class="anio">2015</p>
+                <p><em>Este segundo álbum consolidó su popularidad</em>, presentando temas como <span lang="en">Bet My Life</span> y <span lang="en">Shots</span>. La banda exploró 
+                una producción más pulida y letras que abordan la lucha interna y la búsqueda de identidad.</p>
+            </div>
+
+            <div class="modal">
+                <p id="e2">Lista de canciones</p>
+
+                <ol id="l2">
+                    <li><span lang="en"> Shots</span>
+                    <li><span lang="en">Gold</span>
+                    <li><span lang="en">Whatever It Takes</span>
+                    <li><span lang="en">Enemy</span>
+                    <li><span lang="en">I Bet My Life</span>
+                    <li><span lang="en">A Map to the Next World</span>
+                    <li><span lang="en">In My Mind</span>
+                    <li><span lang="en">Friction</span>    
+                </ol>
+
+
+                <script >
+                    $('#l2').dialog( 
+                        { 
+                            modal: true, 
+                            autoOpen: false ,
+                            title: 'Lista de canciones',
+                            width: 440,
+                            draggable:false
+                    } );
+                    
+                    $('#e2').on('click', function(){
+                        $('#l2').dialog('open');
+                    })
+                </script>
+
+            </div>
+
+        </section>
+
+        <section id="evolve">
+
+            <figure>
+                <img src="image/evolve.jpeg" alt="Álbum del 2017, Evolve">
+            </figure>
+
+            <div class="texto">
+                <h3><span class="titulosD" lang="en">Evolve</span></h3>
+                <p class="anio">2017</p>
+                <p>Con este álbum, <strong>presentaron un sonido más optimista y experimental</strong>, reflejado en sencillos como <span lang="en">Believer</span> y <span lang="en">Thunder</span>.
+                Este trabajo fue bien recibido y mostró una evolución en su estilo musical, combinando ritmos pegajosos con poderosas melodías.</p>  
+            </div>
+
+            <div class="modal">
+                <p id="e3">Lista de canciones</p>
+
+                <ol id="l3">
+                    <li><span lang="en">I Don't Belong</span>
+                    <li><span lang="en">Believer</span>
+                    <li><span lang="en">Walking the Wire</span>
+                    <li><span lang="en">Whatever It Takes</span>
+                    <li><span lang="en">Next to Me</span>
+                    <li><span lang="en">Mouth of the River</span>
+                    <li><span lang="en">Thunder</span>
+                    <li><span lang="en">Start Over</span>    
+                </ol>
+
+                <script >
+                    $('#l3').dialog( 
+                        { 
+                            modal: true, 
+                            autoOpen: false ,
+                            title: 'Lista de canciones',
+                            width: 440,
+                            draggable:false
+                    } );
+                    
+                    $('#e3').on('click', function(){
+                        $('#l3').dialog('open');
+                    })
+                </script>
+
+            </div>
+            
+        </section>
+
+        <section id="origins">
+
+            <figure>
+                <img src="image/origins.jpeg" alt="Álbum del 2018, Origins">
+            </figure>
+
+            <div class="texto">
+                <h3><span class="titulosD" lang="en">Origins</span></h3>
+                <p class="anio">2018</p>
+                <p>Un complemento al disco anterior, Evolve, este álbum incluye canciones como <span lang="en">Natural</span> y <span lang="en">Bad Liar</span>, donde la banda sigue explorando temas de lucha
+                y resiliencia, mientras experimenta con sonidos más diversos.</p>
+            </div>
+
+            <div class="modal">
+                <p id="e4">Lista de canciones</p>
+
+                <ol id="l4">
+                    <li><span lang="en">Natural</span>
+                    <li><span lang="en">Boomerang</span>
+                    <li><span lang="en">Machine</span>
+                    <li><span lang="en">Cool Out</span>
+                    <li><span lang="en">Bad Liar</span>
+                    <li><span lang="en">Only</span>
+                    <li><span lang="en">Birds</span>
+                    <li><span lang="en">Burn Out</span>    
+                </ol>
+
+                <script >
+                    $('#l4').dialog( 
+                        { 
+                            modal: true, 
+                            autoOpen: false ,
+                            title: 'Lista de canciones',
+                            width: 440,
+                            draggable:false
+                    } );
+                    
+                    $('#e4').on('click', function(){
+                        $('#l4').dialog('open');
+                    })
+                </script>
+
+            </div>
+
+        </section>
+        
+        <section id="mercury">
+
+            <figure>
+                <img src="image/Mercury.jpg" alt="Mercury Act 1 álbum del 2021 y Mercury Act 2 álbum del 2023">
+            </figure>
+
+            <div class="texto">
+                <h3 class="titulosD"><span lang="en">Mercury Act</span> 1 y <span class="titulosD" lang="en">Mercury Act</span> 2</h3>
+                <p class="anio">2021 y 2023</p>
+                <p>Son una continuación de su búsqueda musical y lírica, <em>con una mezcla de rock y pop que sigue resonando con sus fans</em>. 
+                Sus canciones demuestran su capacidad para conectar emocionalmente con el público.</p>
+            </div>
+
+            <div class="modal">
+                <p id="e5">Lista de canciones</p>
+
+                <ol id="l5">
+                    <li><span lang="en">Follow You</span>
+                    <li><span lang="en">Cutthroat</span>
+                    <li><span lang="en">I Don't Belong</span>
+                    <li><span lang="en">Wrecked</span>
+                    <li><span lang="en">Enemy</span>
+                    <li><span lang="en">Dull Knives</span>
+                    <li><span lang="en">No Time for Toxic People</span>
+                    <li><span lang="en">One Day</span>    
+                </ol>
+
+                <script >
+                    $('#l5').dialog( 
+                        { 
+                            modal: true, 
+                            autoOpen: false ,
+                            title: 'Lista de canciones',
+                            width: 440,
+                            draggable:false
+                    } );
+                    
+                    $('#e5').on('click', function(){
+                        $('#l5').dialog('open');
+                    })
+                </script>
+
+            </div>
+
+        </section>
+
+        <section class="hits">
+            <h2>Hits de la banda</h2>
+            <iframe src="https://player.vimeo.com/video/228450702" width="600" height="580" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/693748293" width="600" height="580" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Diseñado y Desarrollado por Catherine Hernández</p>
+        <p>Profesora Mabel Garcia. Maquetado y Desarrollo Web</p>
+        <p>Proyecto Final - TP 3. Escuela DaVinci 2024</p>
+        
+    </footer>
+
+    
+</body>
+</html>
